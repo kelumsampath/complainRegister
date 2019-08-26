@@ -1,0 +1,13 @@
+.card{
+    border: 2px solid blue;
+    border-radius: 3%;
+}
+.list-group{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.text{
+    margin-left: 10%;
+}
