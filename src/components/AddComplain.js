@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-
+import axios from 'axios'
 
 class AddComplain extends React.Component {
 
@@ -28,14 +28,23 @@ class AddComplain extends React.Component {
     this.setState({ complain: event.target.value });
   }
   handleSubmit(event) {
-    var complainData = {
+    var complain = {
       name: this.state.name,
-      house: this.state.houseNo,
+      houseNO: this.state.houseNo,
       complain: this.state.complain
     }
     //alert('A name was submitted: ' + this.complainData.name);
     event.preventDefault();
-    console.log(complainData);
+    console.log(complain);
+    axios.post('http://localhost:57987/api/addcomplain', 
+        complain
+       )
+       .then(function (response) {
+         console.log(response.data)
+       })
+       .catch(function (error) {
+         console.log(error);
+       });
   }
 
   render() {
