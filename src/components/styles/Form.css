@@ -1,0 +1,28 @@
+.form{
+    margin-top: 3%;
+    border: 5px solid blue;
+    width: 40%;
+    text-align: left;
+    margin-left: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 3%;
+    background-color: #d2fafb;
+}
+.lable{
+   margin-top: 2%; 
+   margin-bottom: 2%; 
+ margin-left: 10%;
+}
+.form-control{
+    width: 250%;
+}
+h1{
+    text-align: center;
+    margin-top: -5%;
+}
+Button{
+   width: 20%;
+   margin-left: 40%;
+   margin-top: 5%;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import axios from 'axios'
+import './styles/Form.css'
 
 class AddComplain extends React.Component {
 
@@ -50,18 +51,19 @@ class AddComplain extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Name of complainer:
-          <input type="text" value={this.state.name} onChange={this.handleChangeName} />
+        <form onSubmit={this.handleSubmit}  className='form'>
+        <h1>Add Complain</h1>
+          <label className='lable'>
+            Name of complainer:<br/>
+          <input  class="form-control" type="text" value={this.state.name} onChange={this.handleChangeName} />
           </label><br></br>
-          <label>
-            Residencial Number:
-          <input type="Number" value={this.state.houseNo} onChange={this.handleChangeHouseNo} />
+          <label className='lable'>
+            Residencial Number:<br/>
+          <input  class="form-control" type="Number" value={this.state.houseNo} onChange={this.handleChangeHouseNo} />
           </label><br></br>
-          <label>
-            Complain:
-          <input type="text" value={this.state.complain} onChange={this.handleChangeComplain} />
+          <label className='lable'>
+            Complain:<br/>
+          <input  class="form-control" type="text" value={this.state.complain} onChange={this.handleChangeComplain} />
           </label><br></br>
           <Button type="submit" value="Submit" >Submit</Button>
         </form>
