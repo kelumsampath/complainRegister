@@ -2,6 +2,11 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 
 class ViewComplain extends React.Component {
+   data=[{name: "A", houseNO: "55", complain: "cdcd"},
+   {name: "B", houseNO: "55", complain: "cdcd"},
+   {name: "C", houseNO: "55", complain: "cdcd"},
+   {name: "D", houseNO: "55", complain: "cdcd"}
+  ]
   render() {
     return (
       <div>

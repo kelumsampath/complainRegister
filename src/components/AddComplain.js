@@ -55,15 +55,15 @@ class AddComplain extends React.Component {
         <h1>Add Complain</h1>
           <label className='lable'>
             Name of complainer:<br/>
-          <input  class="form-control" type="text" value={this.state.name} onChange={this.handleChangeName} />
+          <input  class="form-control" type="text" value={this.state.name} onChange={this.handleChangeName} required/>
           </label><br></br>
           <label className='lable'>
             Residencial Number:<br/>
-          <input  class="form-control" type="Number" value={this.state.houseNo} onChange={this.handleChangeHouseNo} />
+          <input  class="form-control" type="Number" value={this.state.houseNo} onChange={this.handleChangeHouseNo} required/>
           </label><br></br>
           <label className='lable'>
             Complain:<br/>
-          <input  class="form-control" type="text" value={this.state.complain} onChange={this.handleChangeComplain} />
+          <input  class="form-control" type="text" value={this.state.complain} onChange={this.handleChangeComplain} required/>
           </label><br></br>
           <Button type="submit" value="Submit" >Submit</Button>
         </form>
