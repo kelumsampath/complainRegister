@@ -8,8 +8,8 @@ class NavBar extends React.Component {
                     <Navbar.Brand href="#home">Navbar</Navbar.Brand>
                     <Nav className="mr-auto">
                         <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/addcomplain">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <Nav.Link href="/addcomplain">Add complain</Nav.Link>
+                        <Nav.Link href="/viewcomplain">View complains</Nav.Link>
                     </Nav>
                     <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />

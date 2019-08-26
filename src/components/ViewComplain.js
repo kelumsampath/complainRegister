@@ -6,7 +6,7 @@ class ViewComplain extends React.Component {
     return (
       <div>
         
-        <h1>Hellopoooo, </h1>
+        <h1> view Hellopoooo, </h1>
         <p>
           Add complain
         </p>
