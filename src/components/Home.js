@@ -1,17 +1,14 @@
 import React from 'react';
-
+import './styles/home.css'
 import { Button } from 'react-bootstrap';
 
 class Home extends React.Component {
   render() {
     return (
-      <div>
+      <div className='home'>
         
-        <h1>Hello, </h1>
-        <p>
-          Hello World!
-        </p>
-        <Button type="button" class="btn btn-danger">Danger</Button>
+        <h1>NORKART</h1>
+        <h3>Complains Management System</h3>
 
       </div>
 
