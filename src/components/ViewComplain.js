@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
-class AddComplain extends React.Component {
+class ViewComplain extends React.Component {
   render() {
     return (
       <div>
@@ -18,4 +18,4 @@ class AddComplain extends React.Component {
   }
 }
 
-export default AddComplain;
+export default ViewComplain;
