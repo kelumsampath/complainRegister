@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import axios from 'axios'
 import './styles/Form.css'
+import { Route, Redirect } from 'react-router-dom';
 
 class AddComplain extends React.Component {
 
@@ -42,7 +43,10 @@ class AddComplain extends React.Component {
        )
        .then(function (response) {
          console.log(response)
-         window.alert("response.msg")
+         window.alert(response.data.msg)
+         if(response.data.state){
+          window.location.href = "/";
+         }
        })
        .catch(function (error) {
          console.log(error);
