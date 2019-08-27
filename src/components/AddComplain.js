@@ -30,7 +30,7 @@ class AddComplain extends React.Component {
   }
   handleSubmit(event) {
     var complain = {
-      name: this.state.name,
+      ComplainerName: this.state.name,
       houseNO: this.state.houseNo,
       complain: this.state.complain
     }
