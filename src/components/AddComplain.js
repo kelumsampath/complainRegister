@@ -41,7 +41,8 @@ class AddComplain extends React.Component {
         complain
        )
        .then(function (response) {
-         console.log(response.data)
+         console.log(response)
+         window.alert("response.msg")
        })
        .catch(function (error) {
          console.log(error);
